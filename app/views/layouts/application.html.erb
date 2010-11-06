@@ -1,14 +1,13 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC>
 <html>
-<head>
-  <title>E9sDemo</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <title>Demo » E9s</title>
+    <%= stylesheet_link_tag "app" %>
+    <%= csrf_meta_tag %>
+  </head>
+  <body>
+    <div id="page">
+      <%= yield %>
+    </div>
+  </body>
 </html>
