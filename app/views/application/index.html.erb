@@ -6,23 +6,19 @@
 <div class="content">
   <div class="left">
 
-    <h1>
-      Try out Enrichments yourself!
-    </h1>
-    <p>
-      Since this page is only for demonstration purposes, the form and the menu are fake. This dummy form allows you to translate labels and seat holders.
-    </p>
+    <%= "application.index.header"   .t :tag => :h1   %>
+    <%= "application.index.paragraph".t :as  => :html %>
 
     <h3>
-      Place comment
+      <%= "Place".t + " " + "comment".t %>
     </h3>
 
     <% semantic_form_for Comment.new, :url => "" do |form| %>
       <%= form.inputs :name, :email, :website, :message %>
       <%  form.buttons do %>
         <li>
-          <%= submit_tag "Create" %>
-          <%= link_to    "Cancel" %>
+          <%= submit_tag "Create".t %>
+          <%= link_to    "Cancel".t %>
         </li>
       <% end %>
     <% end %>
@@ -31,11 +27,11 @@
   <ul>
     <% ["Home", "Developers", "Comments", "Documentation", "Support", "About me"].each do |x| %>
     <li>
-      <%= link_to x, "#" %>
+      <%= link_to x.t, "#" %>
     </li>
     <% end %>
     <li>
-      More users
+      <%= ["More".t, " ", "users".t].join "" %>
     </li>
   </ul>
 </div>
