@@ -1,17 +1,41 @@
+<div class="locales">
+  <% %w(en nl es).each do |locale| %>
+    <%= link_to image_tag("locales/#{locale}.gif"), url_for(params.merge(:locale => locale)), :class => ("selected" if locale == I18n.locale.to_s) %>
+  <% end %>
+</div>
 <div class="content">
   <div class="left">
+
     <h1>
-      Hello everybody!
+      Try out Enrichments yourself!
     </h1>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Since this page is only for demonstration purposes, the form and the menu are fake. This dummy form allows you to translate labels and seat holders.
     </p>
+
+    <h3>
+      Place comment
+    </h3>
+
+    <% semantic_form_for Comment.new, :url => "" do |form| %>
+      <%= form.inputs :name, :email, :website, :message %>
+      <%  form.buttons do %>
+        <li>
+          <%= submit_tag "Create" %>
+          <%= link_to    "Cancel" %>
+        </li>
+      <% end %>
+    <% end %>
+
   </div>
   <ul>
-    <% %w(Home Developers Comments Documentation Support).each do |x| %>
+    <% ["Home", "Developers", "Comments", "Documentation", "Support", "About me"].each do |x| %>
     <li>
       <%= link_to x, "#" %>
     </li>
     <% end %>
+    <li>
+      More users
+    </li>
   </ul>
 </div>

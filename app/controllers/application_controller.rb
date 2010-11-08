@@ -7,4 +7,14 @@ class ApplicationController < ActionController::Base
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
+
+  before_filter :set_locale
+
+private
+
+  def set_locale
+    session[:locale] = params[:locale] if %w(en nl es).include?(params[:locale])
+    I18n.locale = session[:locale]
+  end
+
 end
