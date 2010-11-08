@@ -36,11 +36,10 @@ textarea {
 #page {
   width: 750px;
   min-height: 100%;
-  margin: 0 auto;
-  padding-top: 80px; }
+  margin: 0 auto; }
 
 #page div.locales {
-  padding-bottom: 80px;
+  padding-top: 80px;
   text-align: center; }
 
 #page div.locales a img {
@@ -52,6 +51,7 @@ textarea {
   border: 1px solid #06F; }
 
 #page div.content {
+  padding-top: 80px;
   clear: both; }
 
 #page div.content div.left {
@@ -61,18 +61,21 @@ textarea {
 #page div.content div.left h1 {
   margin-bottom: 35px; }
 
+#page div.content div.left h3 {
+  font-size: 22px;
+  margin-bottom: 22px; }
+
 #page div.content div.left p {
+  margin-bottom: 30px;
+  font-size: 18px;
   line-height: 150%; }
 
-#page div.content div.left form {
-  margin-top: 50px; }
-
 #page div.content div.left form label {
-  margin-top: 15px;
   display: block;
   font-weight: bold; }
 
 #page div.content div.left form .inputs input {
+  margin-bottom: 15px;
   width: 350px;
   font-size: 16px; }
 
@@ -82,7 +85,7 @@ textarea {
   font-size: 18px; }
 
 #page div.content div.left form .buttons {
-  padding: 40px 0 60px 0; }
+  padding: 15px 0 60px 0; }
 
 #page div.content div.left form .buttons input {
   margin-right: 6px;
