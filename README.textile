@@ -1,0 +1,114 @@
+
+h1. E9s Demo (Rails 2)
+
+A simple Rails 2 application in which the Enrichments (e9s) gem is demonstrated
+
+h2. Introduction
+
+E9s was created due to the need of simply implementing I18n within a Rails application. This simplifies internationalization of your Rails application making a Rails developers life much easier. E9s is divided into modules (as gem and plugin): "Rich-CMS":http://github.com/archan937/rich_cms , "Rich-i18n":http://github.com/archan937/rich_i18n and "Rich-pluralization":http://github.com/archan937/rich_pluralization.
+
+h2. Try out the demo yourself
+
+h4. In Rails 2
+
+Clone the git repository:
+
+<pre>
+  git clone https://github.com/archan937/e9s-demo.git && cd e9s-demo
+</pre>
+
+Check out the @rails2@ branch:
+
+<pre>
+  git checkout origin/rails2
+</pre>
+
+Run the following in your console to install gem dependencies:
+
+<pre>
+  sudo rake gems:install
+</pre>
+
+Run the Rails server:
+
+<pre>
+  script/server
+</pre>
+
+h4. In Rails 3
+
+Clone the git repository:
+
+<pre>
+  git clone https://github.com/archan937/e9s-demo.git && cd e9s-demo
+</pre>
+
+Run the following in your console to install with Bundler:
+
+<pre>
+  sudo bundle install
+</pre>
+
+Run the Rails server:
+
+<pre>
+  rails s
+</pre>
+
+h4. Open your browser
+
+Visit "http://localhost:3000/cms" and log in with "paul.engel@holder.nl" and "test". Click on "Mark content" and start translating! ^^
+
+h2. A list of E9s features
+
+h3. Pluggable CMS
+
+* @Easy setup@ - Rich-CMS only has a two-liner setup
+* @Authentication@ - Easily specify the authentication logic to be used
+* @Add editable content@ - Easily specify content available within the CMS by registering them
+
+h3. I18n
+
+* @Translate on-site@ - Just specify you want to use Rich-CMS and you are set to translate in the front-end
+* @Localized pluralization@ - Translations only in singular form are sufficient enough as E9s can pluralize in foreign languages
+* @Default values@ - Use the translation key (or a portion) as default value: @"continue".t@ returns @"continue"@ and @"text.Welcome_to_our_site".t@ returns @"Welcome to our site"@
+* @An easy interface@ - Just call the @t@ method on string or symbols to translate and @pl@ to pluralize
+* @Combine translations@ - Joining keys with spaces combines translations: @"More houses".t@ returns @"Meer huizen"@ in Dutch
+* @Preserve i18n meta data@ - Rich-i18n preserves the translation @key@, @value@, @locale@ and @derivative key@ (the argument passed for translation). Enquiring this can come in handy when implementing an internationalization CMS (see "Rich-CMS":http://github.com/archan937/rich_cms).
+
+h3. Formtastic
+
+* @Labels, seatholders and default values@ - Not only translate labels, but also hint text (so called @seatholders@) and even translate default values
+* @Unobtrusive implementation@ - Translate labels and seatholders unobtrusively, in other words: leave your @semantic_form_for@ (view) code completely untouched
+* @Specific translations@ - Not only specify general translations for labels and seatholders, but make them model or even form specific
+
+h3. Inflections
+
+* @Preserve character casing@ - E9s preserves the casing in your translations: @"save".t@ returns @"bewaar"@, @"Save".t@ returns @"Bewaar"@ and @"SAVE".t@ returns @"BEWAAR"@ in Dutch
+* @Preserve pluralization@ - E9s singularizes or pluralizes your translations depending on the key: @"house".t@ returns @"huis"@ and @"Houses".t@ returns @"Huizen"@ in Dutch
+
+h2. Contact me
+
+For support, remarks and requests please mail me at "paul.engel@holder.nl":mailto:paul.engel@holder.nl.
+
+h2. Enrichments
+
+The all-in-one gem at - "http://codehero.es/rails_gems_plugins/e9s":http://codehero.es/rails_gems_plugins/e9s - "http://github.com/archan937/e9s":http://github.com/archan937/e9s
+
+h3. E9s modules
+
+* Rich-CMS <br> "http://codehero.es/rails_gems_plugins/rich_cms":http://codehero.es/rails_gems_plugins/rich_cms <br> "http://github.com/archan937/rich_cms":http://github.com/archan937/rich_cms
+* Rich-i18n <br> "http://codehero.es/rails_gems_plugins/rich_i18n":http://codehero.es/rails_gems_plugins/rich_i18n <br> "http://github.com/archan937/rich_i18n":http://github.com/archan937/rich_i18n
+* Rich-pluralization <br> "http://codehero.es/rails_gems_plugins/rich_pluralization":http://codehero.es/rails_gems_plugins/rich_pluralization <br> "http://github.com/archan937/rich_pluralization":http://github.com/archan937/rich_pluralization
+
+h2. License
+
+Copyright (c) 2010 Paul Engel, released under the MIT license
+
+"http://holder.nl":http://holder.nl - "http://codehero.es":http://codehero.es - "http://gettopup.com":http://gettopup.com - "http://twitter.com/archan937":http://twitter.com/archan937 - "paul.engel@holder.nl":mailto:paul.engel@holder.nl
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
