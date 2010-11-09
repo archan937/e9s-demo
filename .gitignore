@@ -1,5 +1,6 @@
 .bundle
 db/test.sqlite3
 db/production.sqlite3
+public/images/rich/*
 log/*.log
 tmp/**/*
