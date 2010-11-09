@@ -9,6 +9,8 @@ E9s was created due to the need of simply implementing I18n within a Rails appli
 
 h2. Try out the demo yourself
 
+h4. In Rails 3
+
 Clone the git repository:
 
 <pre>
@@ -27,7 +29,35 @@ Run the Rails server:
   rails s
 </pre>
 
-Open your browser at "http://localhost:3000/cms" and log in with "paul.engel@holder.nl" and "test".
+h4. In Rails 2
+
+Clone the git repository:
+
+<pre>
+  git clone https://github.com/archan937/e9s-demo.git && cd e9s-demo
+</pre>
+
+Check out the @rails2@ branch:
+
+<pre>
+  git checkout origin/rails2
+</pre>
+
+Run the following in your console to install gem dependencies:
+
+<pre>
+  sudo rake gems:install
+</pre>
+
+Run the Rails server:
+
+<pre>
+  script/server
+</pre>
+
+h4. Open your browser
+
+Visit "http://localhost:3000/cms" and log in with "paul.engel@holder.nl" and "test". Click on "Mark content" and start translating! ^^
 
 h2. A list of E9s features
 
