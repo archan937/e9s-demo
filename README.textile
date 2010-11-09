@@ -57,7 +57,7 @@ Run the Rails server:
 
 h4. Open your browser
 
-Visit "http://localhost:3000/cms" and log in with "paul.engel@holder.nl" and "test". Click on "Mark content" and start translating! ^^
+Visit "http://localhost:3000/cms":http://localhost:3000/cms and log in with *paul.engel@holder.nl* and *test*. Click on *Mark content* and start translating! ^^
 
 h2. A list of E9s features
 
