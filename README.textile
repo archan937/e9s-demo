@@ -34,7 +34,7 @@ h4. In Rails 2
 Clone the git repository:
 
 <pre>
-  git clone https://github.com/archan937/e9s-demo.git && cd e9s-demo
+  git clone git://github.com/archan937/e9s-demo.git && cd e9s-demo
 </pre>
 
 Check out the @rails2@ branch:
