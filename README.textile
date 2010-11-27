@@ -1,7 +1,7 @@
 
 h1. E9s Demo (Rails 2)
 
-A simple Rails 2 application in which the Enrichments (e9s) gem is demonstrated
+A simple Rails 2 application in which the "Enrichments (e9s) gem":http://github.com/archan937/e9s is demonstrated.
 
 h2. Introduction
 
